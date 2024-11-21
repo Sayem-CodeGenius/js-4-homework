@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "Sen", sans-serif;
+    --third-family: "Roboto", sans-serif;
+    --brand-primary: #151925;
+    --brand-secondary:#323846;
+    --brand-tertiary:  #fff;
+    --brand-btn: #01eeff;
+  }
+
+.moodShift {
+    --brand-primary: #fff;
+    --brand-secondary:#ecf0f1 ;
+    --brand-tertiary:  #000000;
+    --brand-btn: #ea3333;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* CSS COMMON START */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: var(--font-family);
+}
+body{
+    font-family: var(--font-family);
+    background-color: var(--brand-primary);
+    transition: 0.25s;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* CSS COMMON END */
+
+/* NavBar Begins */
+nav{
+    background-color: var(--brand-primary);
+    box-shadow: rgb(255 255 255 / 24%) 0px 3px 8px;
+    }
+
+nav .logoImg a img {
+    width: 50px;
+}
+  
+nav .collapse #menuBar li a{
+font-weight: 500;
+padding: 30px 25px;
+font-size: 16px;
+color:var(--brand-tertiary);
+}
+nav .search .btn {
+color:var(--brand-tertiary);
+border: 1px solid var(--brand-tertiary);
+}
+nav .moodBtn{
+    background-color: var(--brand-primary);
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+nav .moodBtn span{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+}
+nav .moodBtn span.sunIcon{
+    transition: 0.3s ;
+    color: var(--brand-tertiary);
+}
+.moodShift .moodBtn span.sunIcon{
+    margin-top: -40px;
+}
+nav .moodBtn span.moonIcon{
+    background-color: var(--brand-primary);
+    color: var(--brand-tertiary);
+}
+
+
+
+/* NavBar Ends */
+
+
